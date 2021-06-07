@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.volunteerpage.VolunteerPageController">
+   <children>
+      <AnchorPane prefHeight="150.0" prefWidth="900.0" style="-fx-background-color: #2B9C7A;">
+         <children>
+            <ImageView fitHeight="125.0" fitWidth="125.0" layoutX="35.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@volunteerpageone/v.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="192.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Volunteer!">
+               <font>
+                  <Font name="Book Antiqua" size="60.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="231.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Help the community, have fun and improve your Resume!">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <AnchorPane layoutX="97.0" layoutY="215.0" prefHeight="414.0" prefWidth="706.0" style="-fx-background-color: #637CD6; -fx-border-radius: 20; -fx-background-radius: 24;">
+         <children>
+            <Text fill="WHITE" layoutX="249.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="name" layoutX="249.0" layoutY="127.0" prefHeight="29.0" prefWidth="208.0" promptText="Jason Valbuena" />
+            <Text fill="WHITE" layoutX="249.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="age" layoutX="249.0" layoutY="187.0" prefHeight="29.0" prefWidth="208.0" promptText="24" />
+            <Text fill="WHITE" layoutX="249.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Describe yourself briefly">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="describe" layoutX="249.0" layoutY="247.0" prefHeight="29.0" prefWidth="208.0" promptText="Business Grad from UoT" />
+            <Button fx:id="conti" layoutX="297.0" layoutY="312.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="38.0" prefWidth="113.0" style="-fx-background-color: #3555FF;" text="Continue">
+               <font>
+                  <Font name="Book Antiqua" size="13.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+       <Button fx:id="back" layoutX="787.0" layoutY="648.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="29.0" prefWidth="73.0" text="Back" />
+   </children>
+</AnchorPane>

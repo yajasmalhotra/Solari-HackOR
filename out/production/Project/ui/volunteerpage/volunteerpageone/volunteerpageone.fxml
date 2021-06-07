@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.volunteerpage.volunteerpageone.VolunteerPageOneController">
+   <children>
+      <AnchorPane prefHeight="150.0" prefWidth="900.0" style="-fx-background-color: #2B9C7A;">
+         <children>
+            <ImageView fitHeight="125.0" fitWidth="125.0" layoutX="35.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@v.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="192.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Volunteer!">
+               <font>
+                  <Font name="Book Antiqua" size="60.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="231.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Help the community, have fun and improve your Resume!">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <AnchorPane layoutX="20.0" layoutY="219.0" prefHeight="251.0" prefWidth="415.0" style="-fx-background-color: #637CD6;">
+         <children>
+            <ChoiceBox fx:id="searchByRegion" layoutX="27.0" layoutY="54.0" prefWidth="150.0" />
+            <Text fill="WHITE" layoutX="27.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search by Region" />
+            <ChoiceBox fx:id="searchByCompany" layoutX="238.0" layoutY="54.0" prefWidth="150.0" />
+            <Text fill="WHITE" layoutX="238.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search by Company" />
+            <ChoiceBox fx:id="searchByJobTitle" layoutX="27.0" layoutY="124.0" prefWidth="150.0" />
+            <Text fill="WHITE" layoutX="27.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search by Job Title" />
+            <ChoiceBox fx:id="searchByTag" layoutX="238.0" layoutY="124.0" prefWidth="150.0" />
+            <Text fill="WHITE" layoutX="238.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search by Tags" />
+            <Button fx:id="search" layoutX="159.0" layoutY="187.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #3555FF;" text="Search">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="requested" layoutX="91.0" layoutY="524.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="50.0" prefWidth="273.0" text="Requested Jobs">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="assigned" layoutX="91.0" layoutY="597.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="50.0" prefWidth="273.0" text="Assigned Jobs">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="448.0" layoutY="165.0" prefHeight="453.0" prefWidth="436.0" style="-fx-background-color: #EF6969;">
+         <children>
+            <Text fill="WHITE" layoutX="30.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Jobs in this Region:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <ListView fx:id="availableJobs" fixedCellSize="75.0" layoutX="22.0" layoutY="59.0" onMouseClicked="#selectJob" prefHeight="375.0" prefWidth="392.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="requestJob" layoutX="568.0" layoutY="636.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="40.0" prefWidth="197.0" text="Request Job">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="VolunteerID" alignment="CENTER" contentDisplay="CENTER" layoutX="652.0" layoutY="53.0" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="787.0" layoutY="648.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="29.0" prefWidth="73.0" text="Back" />
+   </children>
+</AnchorPane>
